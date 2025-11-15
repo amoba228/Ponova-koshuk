@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик - PANOVA</title>
+    <link rel="stylesheet" href="styles_panova.css">
+</head>
+<body>
+
+    <header class="panova-header">
+        <div class="header-nav">
+            <div class="logo">PANOVA</div>
+            <nav>
+                <a href="#">Про сайт</a>
+                <a href="#">Каталог</a>
+                <a href="#" class="active">Корзина</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h2>Ваш кошик покупок</h2>
+
+        <div id="cart-items">
+            <div class="cart-item">
+                <div class="item-info">
+                    <span class="item-name">Mercedes-Benz E-Class Sedan 2024</span>
+                    <span class="item-details">Комплектація: Exclusive Line</span>
+                </div>
+                <div class="item-price-actions">
+                    <span class="item-price">1 500 000 грн</span>
+                    <input type="number" value="1" min="1" class="item-quantity">
+                    <button class="remove-btn">Видалити</button>
+                </div>
+            </div>
+            
+            <div class="cart-item">
+                <div class="item-info">
+                    <span class="item-name">Шини зимові Pirelli (комплект)</span>
+                    <span class="item-details">Розмір: R18</span>
+                </div>
+                <div class="item-price-actions">
+                    <span class="item-price">35 000 грн</span>
+                    <input type="number" value="1" min="1" class="item-quantity">
+                    <button class="remove-btn">Видалити</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <p>Загальна кількість позицій: <span id="total-items">2</span></p>
+            <p class="total-line">Всього до сплати: <span id="cart-total">1 535 000 грн</span></p>
+            <button class="checkout-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
