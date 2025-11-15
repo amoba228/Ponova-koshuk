@@ -6,161 +6,51 @@
     <title>Кошик - PANOVA</title>
     
     <style>
-        /* Основні стилі */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fce7d2; /* Світло-бежевий фон, як на зображенні */
-            margin: 0;
-            padding: 0;
-        }
-
-        /* СТИЛІ ХЕДДЕРА (Навігації) */
-        .panova-header {
-            background-color: #ff6600; /* Яскраво-помаранчевий */
-            color: white;
-            padding: 10px 50px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 30px;
-            padding: 5px 0;
-            font-weight: bold;
-            transition: opacity 0.3s;
-        }
-
-        nav a:hover, nav a.active {
-            opacity: 0.8;
-            border-bottom: 2px solid white; 
-        }
-
-        /* СТИЛІ КОРЗИНИ */
-        .cart-container {
-            max-width: 1000px;
-            margin: 40px auto;
-            background-color: #ffffff;
-            padding: 30px 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #ff6600; /* Помаранчева лінія під заголовком */
-            padding-bottom: 10px;
-        }
-
-        /* Елемент товару */
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .item-info {
-            flex-grow: 1;
-        }
-
-        .item-name {
-            font-weight: bold;
-            color: #333;
-            display: block;
-            font-size: 1.1em;
-        }
-
-        .item-details {
-            color: #666;
-            font-size: 0.9em;
-        }
-
-        .item-price-actions {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .item-price {
-            font-weight: bold;
-            color: #ff6600; /* Ціна помаранчева */
-            min-width: 120px;
-            text-align: right;
-        }
-
-        .item-quantity {
-            width: 60px;
-            padding: 8px;
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .remove-btn {
-            padding: 8px 15px;
-            background-color: #888;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .remove-btn:hover {
-            background-color: #555;
-        }
-
-        /* Підсумок */
-        .cart-summary {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #ddd;
-            text-align: right;
-        }
-
-        .total-line {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        #cart-total {
-            color: #ff6600; /* Загальна сума помаранчева */
-        }
-
-        .checkout-btn {
-            padding: 15px 30px;
-            background-color: #ff6600; /* Кнопка помаранчева */
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .checkout-btn:hover {
-            background-color: #cc5200;
-        }
+        /* CSS стилі залишаються без змін, як у попередній відповіді, для узгодженості */
+        body { font-family: Arial, sans-serif; background-color: #fce7d2; margin: 0; padding: 0; }
+        
+        .panova-header { background-color: #ff6600; color: white; padding: 10px 50px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+        
+        .header-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        
+        .logo { font-size: 1.5em; font-weight: bold; }
+        
+        nav a { color: white; text-decoration: none; margin-left: 30px; padding: 5px 0; font-weight: bold; transition: opacity 0.3s; }
+        
+        nav a:hover, nav a.active { opacity: 0.8; border-bottom: 2px solid white; }
+        
+        .cart-container { max-width: 1000px; margin: 40px auto; background-color: #ffffff; padding: 30px 40px; border-radius: 8px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); }
+        
+        h2 { color: #333; text-align: center; margin-bottom: 30px; border-bottom: 2px solid #ff6600; padding-bottom: 10px; }
+        
+        .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+        
+        .item-info { flex-grow: 1; }
+        
+        .item-name { font-weight: bold; color: #333; display: block; font-size: 1.1em; }
+        
+        .item-details { color: #666; font-size: 0.9em; }
+        
+        .item-price-actions { display: flex; align-items: center; gap: 20px; }
+        
+        .item-price { font-weight: bold; color: #ff6600; min-width: 120px; text-align: right; }
+        
+        .item-quantity { width: 60px; padding: 8px; text-align: center; border: 1px solid #ccc; border-radius: 4px; }
+        
+        .remove-btn { padding: 8px 15px; background-color: #888; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+        
+        .remove-btn:hover { background-color: #555; }
+        
+        .cart-summary { margin-top: 30px; padding-top: 20px; border-top: 2px solid #ddd; text-align: right; }
+        
+        .total-line { font-size: 1.3em; font-weight: bold; margin: 10px 0; }
+        
+        #cart-total { color: #ff6600; }
+        
+        .checkout-btn { padding: 15px 30px; background-color: #ff6600; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1.2em; font-weight: bold; margin-top: 20px; transition: background-color 0.3s; }
+        
+        .checkout-btn:hover { background-color: #cc5200; }
+        
     </style>
 </head>
 <body>
@@ -180,7 +70,7 @@
         <h2>Ваш кошик покупок</h2>
 
         <div id="cart-items">
-            <div class="cart-item">
+            <div class="cart-item" data-price="1500000">
                 <div class="item-info">
                     <span class="item-name">Mercedes-Benz E-Class Sedan 2024</span>
                     <span class="item-details">Комплектація: Exclusive Line</span>
@@ -192,26 +82,96 @@
                 </div>
             </div>
             
-            <div class="cart-item">
+            <div class="cart-item" data-price="35000">
                 <div class="item-info">
                     <span class="item-name">Шини зимові Pirelli (комплект)</span>
                     <span class="item-details">Розмір: R18</span>
                 </div>
                 <div class="item-price-actions">
                     <span class="item-price">35 000 грн</span>
-                    <input type="number" value="1" min="1" class="item-quantity">
+                    <input type="number" value="2" min="1" class="item-quantity">
                     <button class="remove-btn">Видалити</button>
                 </div>
             </div>
         </div>
 
         <div class="cart-summary">
-            <p>Загальна кількість позицій: <span id="total-items">2</span></p>
-            <p class="total-line">Всього до сплати: <span id="cart-total">1 535 000 грн</span></p>
+            <p>Загальна кількість позицій: <span id="total-items">3</span></p>
+            <p class="total-line">Всього до сплати: <span id="cart-total">1 570 000 грн</span></p>
             <button class="checkout-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
         </div>
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const totalItemsSpan = document.getElementById('total-items');
+            const cartTotalSpan = document.getElementById('cart-total');
+
+            // Функція для форматування числа (додає пробіли як роздільник тисяч)
+            const formatPrice = (price) => {
+                return price.toLocaleString('uk-UA') + ' грн';
+            };
+
+            // Функція для оновлення підсумків кошика
+            const updateCartSummary = () => {
+                let totalAmount = 0;
+                let totalQuantity = 0;
+
+                // Проходимо по всіх елементах кошика
+                const items = cartItemsContainer.querySelectorAll('.cart-item');
+                
+                items.forEach(item => {
+                    const pricePerUnit = parseFloat(item.getAttribute('data-price'));
+                    const quantityInput = item.querySelector('.item-quantity');
+                    const currentQuantity = parseInt(quantityInput.value);
+
+                    // Перевірка на коректність даних
+                    if (isNaN(pricePerUnit) || isNaN(currentQuantity)) return;
+
+                    // Обчислення суми для поточного товару
+                    const itemTotal = pricePerUnit * currentQuantity;
+                    totalAmount += itemTotal;
+                    totalQuantity += currentQuantity;
+
+                    // Оновлення відображення ціни (якщо потрібно, для одиничної ціни)
+                    // Для цього прикладу ми оновлюємо лише загальний підсумок.
+                });
+
+                // Оновлення підсумкових елементів на сторінці
+                totalItemsSpan.textContent = totalQuantity;
+                cartTotalSpan.textContent = formatPrice(totalAmount);
+            };
+
+            // 1. Обробник зміни кількості
+            cartItemsContainer.addEventListener('input', (event) => {
+                if (event.target.classList.contains('item-quantity')) {
+                    // Гарантуємо, що кількість не менше 1
+                    if (event.target.value < 1) {
+                        event.target.value = 1;
+                    }
+                    updateCartSummary();
+                }
+            });
+
+            // 2. Обробник видалення товару
+            cartItemsContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('remove-btn')) {
+                    // Знаходимо батьківський елемент cart-item та видаляємо його
+                    const itemToRemove = event.target.closest('.cart-item');
+                    if (itemToRemove) {
+                        itemToRemove.remove();
+                        updateCartSummary(); // Оновлюємо підсумки після видалення
+                    }
+                }
+            });
+
+            // Ініціалізація: викликаємо функцію при завантаженні сторінки,
+            // щоб відобразити коректний підсумок для початкових товарів.
+            updateCartSummary();
+        });
+    </script>
 
 </body>
 </html>
